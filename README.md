@@ -4,36 +4,29 @@ My Neovim config
 
 ![ss-home](./asset/SS-Home.png)
 
-### Lsp
+### LSP&  Autocomplete
 
-This configuration should support major languages LSP (rust, c, js, ts, css, html, python, tailwindcss, lua, go, bash, sh)
+This lsp configuration should support most of the languages (rust, c, js, ts, css, html, python, tailwindcss, lua, go, bash, sh)
 
 If any language lsp is missing, try installing the respective lsp using mason cmd
 - `:MasonInstall bash-language-server` : for bash lsp
 
 If unsure of what to install, try going through mason's list of lsp, dap, linter, formatter
-- `:Mason` should open a pop-up to show the lists of plugins to install
-
-### Colorscheme
-
-I love catppuccin-mocha with transaparency, looks exactly like above screenshot (note: acrylic background was made witrh windows terminal)
-
-To change the colorscheme try changing the `lua/lucifer/colorscheme.lua` file
-
-### Autocomplete
+- `:Mason` should open a popup with all the plugins list
 
 Langauages with lsp support should have already have autosuggestion/auto-complete.
 
-### Side Explorer
+### Colorscheme
 
-To access the project files we are using `neotree`(use Ctrl-n).
+I like catppuccin-mocha with transaparency, should look exactly like above screenshot (note: acrylic background was made with windows terminal)
 
-### Keychords hint
+To change the colorscheme try changing the `lua/lucifer/colorscheme.lua` file
 
-Added `which-key.nvim` to display hints on the key chords/binds.
 
 ### Miscellaneous
 
+- Added `which-key.nvim` to display hints on the key chords/binds.
+- To access the project files we are using `neotree`(use Ctrl-n).
 - tabstop, shiftwidth, softabstop is taken care by `vim-sleuth`
 - try `:VimBeGood` to practice the key binds
 - there is indentline to show the scriptblock
