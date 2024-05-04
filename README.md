@@ -1,6 +1,6 @@
-# RajeshJaga/nvim
+# rajeshjaga/nvim
 
-This is my configuration of neovim for daily usage text-editor.
+My Neovim config
 
 ![ss-home](./asset/SS-Home.png)
 
@@ -8,7 +8,7 @@ This is my configuration of neovim for daily usage text-editor.
 
 This configuration should support major languages LSP (rust, c, js, ts, css, html, python, tailwindcss, lua, go, bash, sh)
 
-If any language lsp is missing, try install using mason
+If any language lsp is missing, try installing the respective lsp using mason cmd
 - `:MasonInstall bash-language-server` : for bash lsp
 
 If unsure of what to install, try going through mason's list of lsp, dap, linter, formatter
@@ -16,17 +16,17 @@ If unsure of what to install, try going through mason's list of lsp, dap, linter
 
 ### Colorscheme
 
-I love catppuccin-mocha with transaparenct, looks exactly like above screenshot (note: acrylic background was made witrh windows terminal)
+I love catppuccin-mocha with transaparency, looks exactly like above screenshot (note: acrylic background was made witrh windows terminal)
 
-To change the colorscheme try changing the `lua/lucifer/colorscheme.lua`
+To change the colorscheme try changing the `lua/lucifer/colorscheme.lua` file
 
 ### Autocomplete
 
-Langauages with lsp support should have autosuggestion/auto-complete enabled by default.
+Langauages with lsp support should have already have autosuggestion/auto-complete.
 
 ### Side Explorer
 
-We can access the project files using neotree.nvim(use Ctrl-n).
+To access the project files we are using `neotree`(use Ctrl-n).
 
 ### Keychords hint
 
