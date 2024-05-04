@@ -11,7 +11,6 @@ return {
                 return 'make install_jsregexp'
             end)(),
             dependencies = {
-                'afamadriz/friendly-snippets',
                 {
                     'rafamadriz/friendly-snippets',
                     config = function()
@@ -27,7 +26,7 @@ return {
     config = function()
         local cmp = require 'cmp'
         local luasnip = require 'luasnip'
-        luasnip.config.setup{}
+        luasnip.config.setup {}
 
         cmp.setup {
             snippet = {
@@ -42,7 +41,7 @@ return {
                 ['<C-b>'] = cmp.mapping.scroll_docs(-4),
                 ['<C-f>'] = cmp.mapping.scroll_docs(4),
                 ['<CR>'] = cmp.mapping.confirm { select = true },
-                ['<C-y>'] = cmp.mapping.complete {},
+                ['<C><space>'] = cmp.mapping.complete {},
                 ['<C-l>'] = cmp.mapping(function()
                     if luasnip.expand_or_locally_jumpable() then
                         luasnip.expand_or_jump()
