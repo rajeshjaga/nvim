@@ -9,13 +9,15 @@ This is my configuration of neovim for daily usage text-editor.
 This configuration should support major languages LSP (rust, c, js, ts, css, html, python, tailwindcss, lua, go, bash, sh)
 
 If any language lsp is missing, try install using mason
-`:MasonInstall bash-language-server` : for bash lsp
+- `:MasonInstall bash-language-server` : for bash lsp
+
 If unsure of what to install, try going through mason's list of lsp, dap, linter, formatter
-`:Mason` should open a pop-up to show the lists of plugins to install
+- `:Mason` should open a pop-up to show the lists of plugins to install
 
 ### Colorscheme
 
 I love catppuccin-mocha with transaparenct, looks exactly like above screenshot (note: acrylic background was made witrh windows terminal)
+
 To change the colorscheme try changing the `lua/lucifer/colorscheme.lua`
 
 ### Autocomplete
