@@ -65,11 +65,11 @@ return {
             prettier = {},
             isort = {},
             pyright = {},
-            black = {},
             gopls = {},
             goimports = {},
             bashls = {},
             beautysh = {},
+            powershell_es={}
         }
         require('mason').setup()
         local ensure_installed = vim.tbl_keys(servers or {})
