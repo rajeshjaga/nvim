@@ -15,13 +15,14 @@ return {
     config = function()
         require("conform").setup({
             formatters_by_fts = {
-                javascript = { "prettier" },
-                typescript = { "prettier" },
+                javascript = { "prettier" , "eslint"},
+                typescript = { "prettier", "eslint"},
                 html = { "prettier" },
                 lua = { "stylua" },
                 python = { "black", "isort" },
                 bash = { "beautysh" },
                 go = { "go-imports" },
+                rust = { "ast_grep"},
                 powershell = {}
             },
             format_on_save = {

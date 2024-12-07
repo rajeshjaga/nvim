@@ -8,7 +8,8 @@ return {
             'nvim-tree/nvim-web-devicons',
             enabled = vim.g.have_nerd_font
         },
-        'nvim-lua/plenary.nvim'
+        'nvim-lua/plenary.nvim',
+        'nvim-telescope/telescope-fzf-native.nvim'
     },
     config = function()
         local builtin = require('telescope.builtin')
@@ -24,6 +25,8 @@ return {
         }
         pcall(require('telescope').load_extension, 'ui-select')
         pcall(require('telescope').load_extension, 'fzf')
+        pcall(require("telescope").load_extension, "scope")
+
 
         vim.keymap.set('n', '<leader>tf', builtin.find_files, { desc = "List [f]ind [f]ile" })
         vim.keymap.set('n', '<leader>tb', builtin.buffers, { desc = "List all [b]uffer" })
@@ -39,13 +42,14 @@ return {
         vim.keymap.set('n', '<leader>ts', builtin.spell_suggest, { desc = "List [s]pell suggest" })
         vim.keymap.set('n', '<leader>tC', builtin.colorscheme, { desc = "List [c]olor[s]chemes" })
         vim.keymap.set('n', '<leader>tF', builtin.filetypes, { desc = "List [f]ile[t]ypes" })
+        vim.keymap.set('n', '<leader><Tab>', "<cmd>Telescope scope buffers<cr>", { desc = "List Active Buffers" })
 
         vim.keymap.set('n', '<leader>nv', function()
             builtin.find_files { cwd = vim.fn.stdpath 'config' }
         end, { desc = "Edit Neovim config files" }
         )
         -- vim.keymap.set('n', '<leader><leader>', function()
-        --     builtin.live_grep{ 
+        --     builtin.live_grep{
         --         grep_open_files = true,
         --         prompt_title = 'Live Grep in Open Files',
         --     }

@@ -60,7 +60,7 @@ return {
             },
             rust_analyzer = {},
             clangd = {},
-            tsserver = {},
+            ts_ls = {},
             tailwindcss = {},
             prettier = {},
             isort = {},
@@ -69,7 +69,7 @@ return {
             goimports = {},
             bashls = {},
             beautysh = {},
-            powershell_es={}
+            powershell_es = {}
         }
         require('mason').setup()
         local ensure_installed = vim.tbl_keys(servers or {})
