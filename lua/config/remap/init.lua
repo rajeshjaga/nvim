@@ -1,3 +1,4 @@
+
 setmap = vim.keymap.set
 setmap("n", "<leader>ne", ":vsp<CR>:Exp<CR>")
 setmap("n", "<leader>vs", ":vsp <CR>", { desc = "Split the current buffer vertical" })
@@ -20,8 +21,8 @@ setmap('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q
 setmap('n', '<leader>w', ":windo set nowrap<CR>", { desc = 'Disable [W]rap in during multiple windows' })
 
 setmap('n', "<leader>x", function()
-    local config = vim.fn.stdpath('config')
-    vim.cmd("source " + config)
+  local config = vim.fn.stdpath('config')
+  vim.cmd("source " + config)
 end)
 setmap("n", "<leader>j", "<cmd>cnext<CR>")
 setmap("n", "<leader>k", "<cmd>cprev<CR>")

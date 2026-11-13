@@ -22,6 +22,9 @@ vim.pack.add({
           {src=gh('folke/flash.nvim')},
           {src=gh('stevearc/conform.nvim')},
           {src=gh('MeanderingProgrammer/render-markdown.nvim')},
+          {src=gh('MunifTanjim/nui.nvim')},
+          {src=gh('rcarriga/nvim-notify')},
+          {src=gh('j-hui/fidget.nvim')},
           {src=gh('folke/noice.nvim')},
           {src=gh('stevearc/oil.nvim')},
           {src=gh('folke/snacks.nvim')},
@@ -37,12 +40,14 @@ vim.pack.add({
           {src=gh('nvim-lua/plenary.nvim')},
           {src=gh('nvim-telescope/telescope-fzf-native.nvim')},
           ---
+          {src=gh('nvim-treesitter/nvim-treesitter')},
           {src=gh('folke/which-key.nvim')},
           {src=gh('nvim-lualine/lualine.nvim')},
           {
             src=gh('saghen/blink.cmp'),
             version = 'v1.10.2',
           },
+          {src=gh('neovim/nvim-lspconfig')},
 
 })
 
@@ -56,3 +61,5 @@ require('config.plugins.completion')
 require('config.plugins.qol')
 require('config.plugins.mini')
 require('config.plugins.snacks')
+require('config.plugins.treesitter')
+require('config.plugins.telescope')
